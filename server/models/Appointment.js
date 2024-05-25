@@ -16,3 +16,7 @@ const appointmentSchema = new Schema({
         ref: 'User',
     },
     });
+
+const Appointment = model('Appointment', appointmentSchema);
+
+module.exports = Appointment;

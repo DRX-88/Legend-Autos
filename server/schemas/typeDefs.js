@@ -55,3 +55,5 @@ const typeDefs = `
         addAppointment(appointmentDate: String!, appointmentTime: String!, appointmentUser: ID!): Appointment
     }
 `;
+
+module.exports = { typeDefs};
