@@ -36,7 +36,12 @@ const carSchema = new Schema({
     vin: {
         type: String,
         required: true
-    }
+    },
+    filename: {
+        type: String,
+        required: true
+    },
+
 });
 
 const Car = model('Car', carSchema);

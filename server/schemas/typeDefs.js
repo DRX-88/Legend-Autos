@@ -1,4 +1,5 @@
-const typeDefs = `
+const typeDefs = 
+`
     type User {
         _id: ID
         username: String
@@ -19,6 +20,7 @@ const typeDefs = `
         horsepower: Int
         engine: String
         vin: String
+        filename: String
     }
 
     type Appointment {
@@ -56,4 +58,4 @@ const typeDefs = `
     }
 `;
 
-module.exports = { typeDefs};
+module.exports = typeDefs;

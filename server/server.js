@@ -4,8 +4,7 @@ const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
 
-const { resolvers } = require('./schemas/resolvers');
-const { typeDefs } = require('./schemas/typeDefs');
+const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
@@ -13,7 +12,6 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  autoSchemaFile: true,
 });
 
 // Create a new instance of an Apollo server with the GraphQL schema
