@@ -15,6 +15,9 @@ const resolvers = {
         cars: async () => {
             return Car.find();
         },
+        car: async (parent, { _id }) => {
+            return Car.findById({ _id });
+        },
         likedCars: async () => {
             return LikedCars.find();
         },

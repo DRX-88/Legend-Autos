@@ -45,6 +45,7 @@ const typeDefs =
         users: [User]
         user(username: String!): User
         cars: [Car]
+        car(_id: ID!): Car
         likedCars: [LikedCars]
         appointments: [Appointment]
     }
