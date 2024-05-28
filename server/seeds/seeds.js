@@ -6,7 +6,6 @@ const cleanDB = require('./cleanDB');
 db.once('open', async () => {
     try {
         await cleanDB();
-
         await Cars.create(carSeeds);
 
         console.log('Cars seeded successfully!');

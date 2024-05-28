@@ -9,7 +9,7 @@
         "horsepower": 190,
         "engine": "2.0L 4-Cylinder TFSI",
         "vin": "WAUENAF44KN123456",
-        "filename": "audi-a4-black"
+        "filename": "audi-a4-black.jpg"
     },
     {
         "make": "BMW",
@@ -21,7 +21,7 @@
         "horsepower": 335,
         "engine": "3.0L I6 DOHC 24V TwinPower Turbo",
         "vin": "5UXCR6C57JL123456",
-        "filename": "bmw-x5-white"
+        "filename": "bmw-x5-white.jpg"
     },
     {
         "make": "Chevrolet",
@@ -33,7 +33,7 @@
         "horsepower": 275,
         "engine": "3.6L V6 DI",
         "vin": "1G1FB1RS3H0123456",
-        "filename": "chevrolet-camaro-red"
+        "filename": "chevrolet-camaro-red.jpg"
     },
     {
         "make": "Ford",
@@ -45,7 +45,7 @@
         "horsepower": 282,
         "engine": "3.5L V6 Ti-VCT",
         "vin": "1FTEW1C80GKF12345",
-        "filename": "ford-f150-blue"
+        "filename": "ford-f150-blue.jpg"
     },
     {
         "make": "Honda",
@@ -57,7 +57,7 @@
         "horsepower": 158,
         "engine": "2.0L I4 DOHC 16V i-VTEC",
         "vin": "19XFC2F50FE123456",
-        "filename": "honda-civic-silver"
+        "filename": "honda-civic-silver.jpg"
     },
     {
         "make": "Hyundai",
@@ -69,7 +69,7 @@
         "horsepower": 145,
         "engine": "1.8L 4-Cylinder DOHC 16V Dual CVVT",
         "vin": "5NPDH4AE6EH123456",
-        "filename": "hyundai-elantra-black"
+        "filename": "hyundai-elantra-black.jpg"
     },
     {
         "make": "Jeep",
@@ -81,7 +81,7 @@
         "horsepower": 285,
         "engine": "3.6L V6 24V VVT",
         "vin": "1C4BJWEG6DL123456",
-        "filename": "jeep-wrangler-green"
+        "filename": "jeep-wrangler-green.jpg"
     },
     {
         "make": "Kia",
@@ -93,7 +93,7 @@
         "horsepower": 130,
         "engine": "1.6L I4 DGI",
         "vin": "KNDJT2A59C7441234",
-        "filename": "kia-soul-red"
+        "filename": "kia-soul-red.jpg"
     },
     {
         "make": "Mazda",
@@ -105,7 +105,7 @@
         "horsepower": 148,
         "engine": "2.0L 4-Cylinder DOHC 16V VVT",
         "vin": "JM1BL1UF9B1401234",
-        "filename": "mazda-mazda3-blue"
+        "filename": "mazda-mazda3-blue.jpg"
     },
     {
         "make": "Nissan",
@@ -117,6 +117,6 @@
         "horsepower": 485,
         "engine": "3.8L V6 DOHC 24V Twin Turbocharged",
         "vin": "JN1AR5EF0AM230123",
-        "filename": "nissan-gtr-silver"
+        "filename": "nissan-gtr-silver.jpg"
     }
 ]

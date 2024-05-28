@@ -51,7 +51,7 @@ const typeDefs =
     }
 
     type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!, phone: String!): Auth
         login(email: String!, password: String!): Auth
         addCar(make: String!, model: String!, year: Int!, colour: String!, price: Int!, fuel: String!, horsepower: Int!, engine: String!, vin: String!): Car
         addLikedCars(likedUser: ID!, likedCar: ID!): LikedCars

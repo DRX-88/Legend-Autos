@@ -8,7 +8,7 @@ function Cars() {
   const cars = data?.cars || [];
 
   const filenamePath = './src/assets/images/';
-  const filenameType = '.jpg';
+  
 
   cars.map((car) => (
     console.log(car.filename)
@@ -63,7 +63,7 @@ function Cars() {
               <p>{car.vin}</p>
             </div>
             <div style={imgDiv}>
-              <img style={imgSize} src={filenamePath + car.filename + filenameType} alt={car.model} />
+              <img style={imgSize} src={filenamePath + car.filename} alt={car.model} />
             </div>
 
 

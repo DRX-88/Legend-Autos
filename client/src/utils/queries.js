@@ -25,39 +25,39 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_CARS = gql`
-    query cars {
-        cars {
-            _id
-            make
-            model
-            year
-            colour
-            price
-            fuel
-            horsepower
-            engine
-            vin
-            filename
-        }
+query Car {
+    cars {
+      _id
+      make
+      model
+      year
+      colour
+      price
+      fuel
+      horsepower
+      engine
+      vin
+      filename
     }
+  }
 `;
 
 export const QUERY_SINGLE_CAR = gql`
-    query getSingleCar($carId: ID!) {
-        car(carId: $carId) {
-            _id
-            make
-            model
-            year
-            colour
-            price
-            fuel
-            horsepower
-            engine
-            vin
-            filename
-        }
+query Car($id: ID!) {
+    car(_id: $id) {
+      _id
+      make
+      model
+      year
+      colour
+      price
+      fuel
+      horsepower
+      engine
+      vin
+      filename
     }
+  }
 `;
 
 export const QUERY_APPOINTMENTS = gql`
