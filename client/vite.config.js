@@ -14,5 +14,8 @@ export default defineConfig({
         changeOrigin: true
       }
     }
-  }
+  },
+  // Add the favicon option here
+  favicon: './favicon.ico'
 })
+

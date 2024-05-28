@@ -73,16 +73,48 @@ export const QUERY_APPOINTMENTS = gql`
     }
 `;
 
-export const QUERY_LIKED_CARS = gql`
-    query likedCars {
-        likedCars {
+// export const QUERY_LIKED_CARS = gql`
+// likedCars {
+//     _id
+//     likedCar {
+//       _id
+//       make
+//       model
+//       year
+//       colour
+//       price
+//       fuel
+//       horsepower
+//       engine
+//       vin
+//       filename
+//     }
+//   }
+// }
+// `;
+
+export const QUERY_ME = gql`
+    {
+        me {
             _id
-            likedUser {
+            username
+            email
+            employee
+            liked {
                 _id
-            }
-            likedCar {
-                _id
+                make
+                model
+                year
+                colour
+                price
+                fuel
+                horsepower
+                engine
+                vin
+                filename
             }
         }
     }
 `;
+
+

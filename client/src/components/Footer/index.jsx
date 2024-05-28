@@ -1,10 +1,10 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import './footer.css'
 
 const Footer = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+
   return (
-    <footer className="w-100 mt-auto text-dark p-4">
+    <footer>
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button
@@ -14,10 +14,10 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h4>&copy; {new Date().getFullYear()} - Tech Friends</h4>
+        <h4>&copy; {new Date().getFullYear()} - Legend Autos</h4>
       </div>
     </footer>
   );
 };
-
 export default Footer;
+  

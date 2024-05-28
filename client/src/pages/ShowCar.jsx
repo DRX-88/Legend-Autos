@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client';
 
 
 import { QUERY_SINGLE_CAR } from '../utils/queries';
+// , ADD_APPOINTMENT
 
 const ShowCar = () => {
   const { _id } = useParams();
@@ -29,6 +30,8 @@ const ShowCar = () => {
     borderRadius: '5px',
     ObjectFit: 'cover',
   };
+
+
 
   const calculateMonthlyPayment = () => {
     // Get the input values
@@ -58,6 +61,8 @@ const ShowCar = () => {
     event.preventDefault();
     const monthlyPayment = calculateMonthlyPayment();
     const biweeklyPayment = calculateBiweeklyPayment();
+    document.getElementById('monthlyPayment').textContent = monthlyPayment;
+    document.getElementById('biweeklyPayment').textContent = biweeklyPayment;
     console.log('Monthly Payment:', monthlyPayment);
     console.log('Biweekly Payment:', biweeklyPayment);
     // Add your logic here to handle the form submission
@@ -86,6 +91,37 @@ const ShowCar = () => {
 
     return biweeklyPayment.toFixed(2);
   };
+
+  const handleAppointmentFormSubmit = (event) => {
+    event.preventDefault();
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const name = document.getElementById('name').value;
+    // const [addAppointment] = useMutation(ADD_APPOINTMENT, {
+    //   variables: {
+    //     date,
+    //     time,
+    //     name,
+    //   },
+    //   onCompleted: (data) => {
+    //     console.log('Appointment added:', data);
+    //     // Add any additional logic here after the appointment is added
+    //   },
+    //   onError: (error) => {
+    //     console.error('Error adding appointment:', error);
+    //     // Add any error handling logic here
+    //   },
+    // });
+
+    addAppointment();
+  };
+
+  // ...
+
+  <form onSubmit={handleAppointmentFormSubmit}>
+    {/* Form fields */}
+    <button type="submit">Add Appointment</button>
+  </form>
 
   return (
     <div>
@@ -129,9 +165,32 @@ const ShowCar = () => {
       Calculate
     </button>
           </form>
+          <div>
+            <h3>Monthly Payment:</h3>
+            <p id="monthlyPayment"></p>
+            <h3>Bi-Weekly Payment:</h3>
+            <p id="biweeklyPayment"></p>
+        </div>
+        <div>
+        <form>
+          <div>
+            <label htmlFor="date">Date:</label>
+            <input type="date" id="date" />
+          </div>
+          <div>
+            <label htmlFor="time">Time:</label>
+            <input type="time" id="time" />
+          </div>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" />
+          </div>
+          <button type="submit">Add Appointment</button>
+        </form>
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

@@ -19,7 +19,7 @@ const resolvers = {
             return Car.findById({ _id });
         },
         likedCars: async () => {
-            return LikedCars.find();
+            return LikedCars.find().populate('likedUser').populate('likedCar');
         },
         appointments: async () => {
             return Appointment.find();
